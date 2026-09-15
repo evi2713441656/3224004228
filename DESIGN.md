@@ -30,6 +30,8 @@ main.py
 
 ## 4. 主流程
 
+![查重程序流程图](flowchart.svg)
+
 ```text
 命令行参数
     ↓

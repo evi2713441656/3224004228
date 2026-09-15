@@ -55,9 +55,7 @@ def build_ngram_frequency(text: str, ngram_size: int = NGRAM_SIZE) -> Counter[st
     )
 
 
-def cosine_similarity(
-    first: Counter[str], second: Counter[str]
-) -> float:
+def cosine_similarity(first: Counter[str], second: Counter[str]) -> float:
     """Return cosine similarity of two sparse frequency vectors in [0, 1]."""
     if not isinstance(first, Counter) or not isinstance(second, Counter):
         raise ArgumentError("输入必须是 Counter 词频向量")
@@ -100,6 +98,4 @@ def calculate_similarity_from_files(
     """Read two files and calculate their similarity."""
     if not isinstance(original_path, Path) or not isinstance(plagiarized_path, Path):
         raise ArgumentError("文件路径必须是 pathlib.Path")
-    return calculate_similarity(
-        _read_utf8(original_path), _read_utf8(plagiarized_path)
-    )
+    return calculate_similarity(_read_utf8(original_path), _read_utf8(plagiarized_path))

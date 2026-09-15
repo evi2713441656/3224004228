@@ -8,6 +8,8 @@ python -m trace --count --summary --missing -C coverage --module unittest discov
 
 本次运行的项目文件覆盖率：
 
+![覆盖率图](coverage.svg)
+
 | 文件 | 覆盖率 |
 |---|---:|
 | `main.py` | 81.8% |

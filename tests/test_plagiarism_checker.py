@@ -42,9 +42,7 @@ class SimilarityTests(unittest.TestCase):
         self.assertAlmostEqual(calculate_similarity("abcdef", "abcdef"), 1.0)
 
     def test_whitespace_only_changes_do_not_affect_result(self) -> None:
-        self.assertAlmostEqual(
-            calculate_similarity("abc def ghi", "abcdefghi"), 1.0
-        )
+        self.assertAlmostEqual(calculate_similarity("abc def ghi", "abcdefghi"), 1.0)
 
     def test_unrelated_documents_are_zero(self) -> None:
         self.assertAlmostEqual(calculate_similarity("甲甲甲", "乙乙乙"), 0.0)

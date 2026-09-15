@@ -42,7 +42,9 @@ similarity = dot(original, plagiarized) /
 python -m unittest discover -s tests -v
 ```
 
-本项目包含 14 个单元测试，覆盖文本预处理、N-gram 统计、余弦计算、文件读写、BOM、空文件、缺失文件和非法参数等路径。
+本项目包含 17 个单元测试，覆盖文本预处理、N-gram 统计、余弦计算、文件读写、BOM、空文件、缺失文件和非法参数等路径。
+
+实际测试压缩包的核对情况见 [TEST_DATA_AUDIT.md](TEST_DATA_AUDIT.md)，完整提交前检查见 [SUBMISSION_AUDIT.md](SUBMISSION_AUDIT.md)。
 
 ## 提交前检查
 

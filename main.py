@@ -19,9 +19,7 @@ def run(arguments: list[str]) -> int:
 
     original_path, plagiarized_path, answer_path = map(Path, arguments)
     try:
-        similarity = calculate_similarity_from_files(
-            original_path, plagiarized_path
-        )
+        similarity = calculate_similarity_from_files(original_path, plagiarized_path)
         answer_path.write_text(f"{similarity:.2f}\n", encoding="utf-8")
     except (CheckerError, OSError) as error:
         print(f"查重失败: {error}", file=sys.stderr)

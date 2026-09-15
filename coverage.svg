@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360">
+  <title>单元测试覆盖率</title>
+  <rect width="820" height="360" fill="#ffffff"/>
+  <text x="410" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#1f2937">单元测试覆盖率</text>
+  <text x="410" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Python trace，17 个测试全部通过</text>
+  <line x1="260" y1="85" x2="260" y2="310" stroke="#9ca3af"/>
+  <line x1="260" y1="310" x2="740" y2="310" stroke="#9ca3af"/>
+  <line x1="260" y1="85" x2="740" y2="85" stroke="#e5e7eb"/>
+  <line x1="260" y1="198" x2="740" y2="198" stroke="#e5e7eb"/>
+  <text x="250" y="91" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">100%</text>
+  <text x="250" y="204" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">50%</text>
+  <text x="250" y="316" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">0%</text>
+  <text x="235" y="140" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">main.py</text>
+  <rect x="260" y="110" width="393" height="40" fill="#2563eb"/>
+  <text x="665" y="136" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">81.8%</text>
+  <text x="235" y="215" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">plagiarism_checker.py</text>
+  <rect x="260" y="185" width="407" height="40" fill="#0ea5e9"/>
+  <text x="679" y="211" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">84.8%</text>
+  <text x="235" y="290" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">tests/test_*.py</text>
+  <rect x="260" y="260" width="474" height="40" fill="#14b8a6"/>
+  <text x="746" y="286" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">98.6%</text>
+</svg>
