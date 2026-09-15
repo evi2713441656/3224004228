@@ -7,7 +7,9 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
+from github_html_reader import read_for_inspection
 from main import run
+from main_clean import run as clean_run
 from plagiarism_checker import (
     ArgumentError,
     EmptyDocumentError,
@@ -99,6 +101,35 @@ class SimilarityTests(unittest.TestCase):
 
     def test_command_line_rejects_wrong_argument_count(self) -> None:
         self.assertEqual(run(["only-one-argument"]), 2)
+
+    def test_optional_reader_extracts_github_code_cells(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "page.html"
+            path.write_text(
+                '<td class="blob-code-inner">甲&amp;乙</td>', encoding="utf-8"
+            )
+            self.assertEqual(read_for_inspection(path), "甲&乙")
+
+    def test_optional_reader_keeps_plain_text_unchanged(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "plain.txt"
+            path.write_text("甲乙丙", encoding="utf-8")
+            self.assertEqual(read_for_inspection(path), "甲乙丙")
+
+    def test_optional_command_line_writes_extracted_answer(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            original = root / "original.txt"
+            plagiarized = root / "page.html"
+            answer = root / "answer.txt"
+            original.write_text("abcdef", encoding="utf-8")
+            plagiarized.write_text(
+                '<td class="blob-code-inner">abcdef</td>', encoding="utf-8"
+            )
+            self.assertEqual(
+                clean_run([str(original), str(plagiarized), str(answer)]), 0
+            )
+            self.assertEqual(answer.read_text(encoding="utf-8"), "1.00\n")
 
 
 if __name__ == "__main__":

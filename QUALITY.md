@@ -3,11 +3,11 @@
 使用 Ruff 0.16.7 对所有 Python 源文件执行静态检查和格式检查：
 
 ```text
-ruff check main.py plagiarism_checker.py tests profile_benchmark.py
+ruff check main.py main_clean.py plagiarism_checker.py github_html_reader.py tests profile_benchmark.py
 All checks passed!
 
-ruff format --check main.py plagiarism_checker.py tests profile_benchmark.py
-5 files already formatted
+ruff format --check main.py main_clean.py plagiarism_checker.py github_html_reader.py tests profile_benchmark.py
+7 source files already formatted
 ```
 
 同时执行了：
