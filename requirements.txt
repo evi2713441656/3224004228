@@ -1,0 +1,1 @@
+# No third-party dependencies. The program uses Python 3.9+ standard library only.
