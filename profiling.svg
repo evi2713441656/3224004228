@@ -2,7 +2,7 @@
   <title>cProfile cumulative time</title>
   <rect width="900" height="420" fill="#ffffff"/>
   <text x="450" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#1f2937">cProfile：累计耗时最高的自有函数</text>
-  <text x="450" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">profile_benchmark.py，单次运行总耗时 0.105 s</text>
+  <text x="450" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">profile_benchmark.py，单次运行总耗时 0.107 s</text>
   <line x1="220" y1="92" x2="220" y2="350" stroke="#9ca3af"/>
   <line x1="220" y1="350" x2="840" y2="350" stroke="#9ca3af"/>
   <line x1="220" y1="92" x2="840" y2="92" stroke="#e5e7eb"/>
@@ -12,7 +12,7 @@
   <text x="212" y="356" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">0.00 s</text>
   <text x="205" y="132" text-anchor="end" font-family="Consolas, monospace" font-size="14" fill="#1f2937">calculate_similarity</text>
   <rect x="220" y="111" width="595" height="34" fill="#2563eb"/>
-  <text x="825" y="134" font-family="Arial, sans-serif" font-size="13" fill="#1f2937">0.096 s</text>
+  <text x="825" y="134" font-family="Arial, sans-serif" font-size="13" fill="#1f2937">0.097 s</text>
   <text x="205" y="198" text-anchor="end" font-family="Consolas, monospace" font-size="14" fill="#1f2937">build_ngram_frequency</text>
   <rect x="220" y="177" width="570" height="34" fill="#0ea5e9"/>
   <text x="800" y="200" font-family="Arial, sans-serif" font-size="13" fill="#1f2937">0.092 s</text>
